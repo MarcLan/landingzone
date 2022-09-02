@@ -9,3 +9,7 @@ variable "vpc_cidr" {
 variable "subnet_name" {
     default = "subnet_landingzone"
 }
+
+variable "subnet_cidr" {
+  default = "172.16.1.0/24"
+}
