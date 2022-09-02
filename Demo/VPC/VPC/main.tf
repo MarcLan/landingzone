@@ -7,6 +7,13 @@ terraform {
   }
 }
 
+
+provider "huaweicloud" {
+  region = "ap-southeast-2"
+  access_key = "HMSVCQHYTYSBJHQF886M"
+  secret_key = "qdwBzakJPs3hAbReAcDsEvis69vWbFjL2zK5uczr"
+}
+
 resource "huaweicloud_vpc" "vpc_landingzone" {
   name = var.vpc_name
   cidr = var.vpc_cidr
