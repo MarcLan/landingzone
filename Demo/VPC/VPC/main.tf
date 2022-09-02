@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    huaweicloud = {
+      source  = "huaweicloud/huaweicloud"
+      version = "~> 1.26.0"
+    }
+  }
+}
+
 resource "huaweicloud_vpc" "vpc_landingzone" {
   name = var.vpc_name
   cidr = var.vpc_cidr
